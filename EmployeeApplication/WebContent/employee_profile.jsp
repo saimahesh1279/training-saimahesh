@@ -28,7 +28,7 @@
 			<td>Action</td>
 		</tr>
 	<%
-		int id = (int)session.getAttribute("id");
+		int id = (Integer)session.getAttribute("id");
 	ps = con.prepareStatement("select * from employee where eid=?");
 	ps.setInt(1, id);
 	ResultSet rs = ps.executeQuery();

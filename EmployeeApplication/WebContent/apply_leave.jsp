@@ -9,7 +9,7 @@ int no_of_days=Integer.parseInt(request.getParameter("no_of_days"));
 String date_of_leave=request.getParameter("date_of_leave");
 String designation=request.getParameter("designation");
 int id=(Integer)session.getAttribute("id");
-String sql="insert into leaves(ename,email,phone,gender,no_of_days,date_of_leave,designation,eid) values(?,?,?,?,?,?,?,?)";
+String sql="insert into leaves(ename,email,phone,gender,no_of_day,date_of_leave,designation,eid) values(?,?,?,?,?,?,?,?)";
 ps=con.prepareStatement(sql);
 ps.setString(1, ename);
 ps.setString(2, email);

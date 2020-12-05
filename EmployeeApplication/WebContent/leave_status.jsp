@@ -20,7 +20,7 @@
 			<td>Gender</td>
 			<td>No of days</td>
 			<td>Date of leave</td>
-			<td>Desgination</td>
+			<td>Designation</td>
 			<td>Manager Name</td>
 			<td>Status</td>
 			<td>No of leave remaining</td>
