@@ -29,6 +29,8 @@ if(rs.next()){
 <center><h1>Welcome to doctor update page</h1></center>
 <br><br><br>
 <center>
+
+		<input type="hidden" name="id" value="<%=rs.getInt("Did")%>">
 <input type="text" name="name" value="<%=rs.getString("dname")%>"><br><br><br>
 <input type="email" name="email" value="<%=rs.getString("email")%>"><br><br>
 <input type="number" name="phone" value="<%=rs.getInt("phone")%>"><br>

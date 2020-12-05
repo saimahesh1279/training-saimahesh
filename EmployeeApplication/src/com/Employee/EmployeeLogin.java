@@ -9,7 +9,6 @@ import java.sql.SQLException;
 
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -49,6 +48,7 @@ public class EmployeeLogin extends HttpServlet {
 			HttpSession hs=request.getSession();
 			if(rs.next()) {
 				hs.setAttribute("id", rs.getInt("eid"));
+				hs.setAttribute("leaves", rs.getInt(10));
 				response.sendRedirect("./employee_home.html?msg=login sucessfully");
 			}
 			else

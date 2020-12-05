@@ -1,6 +1,6 @@
 <%@include file="connect.jsp" %>
 <%
-int pid = Integer.parseInt(request.getParameter("pid"));
+int pid = Integer.parseInt(request.getParameter("id"));
 String pname = request.getParameter("pname");
 String email = request.getParameter("email");
 String phone = request.getParameter("phone");
@@ -19,4 +19,3 @@ int a = ps.executeUpdate();
 if (a != 0)
 	response.sendRedirect("patient_profile.jsp?msg=updated sucessfully");
 %>
-© 2020 GitHub, Inc.

@@ -61,8 +61,10 @@ public class DoctorLogin extends HttpServlet {
 			HttpSession hs=request.getSession();
 			if(rs.next())
 			{
+				hs.setAttribute("id",  rs.getInt(1));
+				hs.setAttribute("name", rs.getString(2));
 				hs.setAttribute("demail", email);
-				hs.setAttribute("id", rs.getInt("Did"));
+				hs.setAttribute("specialization", rs.getString("specialization"));
 				response.sendRedirect("./doctor_home.html?msg=loggedin");
 			}else
 			{

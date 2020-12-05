@@ -16,6 +16,7 @@
 	<table border="2px;" align="center" width="500" hight="300">
 		<tr>
 			<td>Id</td>
+			<td>Name</td>
 			<td>Email</td>
 			<td>Phone</td>
 			<td>Gender</td>
@@ -24,7 +25,7 @@
 		</tr>
 
 		<%
-			int id = (int) session.getAttribute("id");
+			int id =(Integer)session.getAttribute("id");
 		String sql = "select * from patient where pid=?";
 		ps = con.prepareStatement(sql);
 		ps.setInt(1, id);

@@ -23,10 +23,12 @@
 			<td>Address</td>
 			<td>Designation</td>
 			<td>Experience</td>
+			<td>No of Leaves Taken</td>
+			<td>No of remaining leaves</td>
 			<td>Action</td>
 		</tr>
 	<%
-		int id = (int) session.getAttribute("id");
+		int id = (int)session.getAttribute("id");
 	ps = con.prepareStatement("select * from employee where eid=?");
 	ps.setInt(1, id);
 	ResultSet rs = ps.executeQuery();
@@ -41,6 +43,8 @@
 		<td><%=rs.getString("address")%></td>
 		<td><%=rs.getString("designation")%></td>
 		<td><%=rs.getInt("experience")%></td>
+		<td><%=rs.getInt("no_of_leaves_taken") %></td>
+		<td><%=20-rs.getInt("no_of_leaves_taken") %></td>
 		<td><a href="update_employee_profile.jsp?id=<%=rs.getInt("eid")%>">update</a></td>
 	</tr>
 	<%
