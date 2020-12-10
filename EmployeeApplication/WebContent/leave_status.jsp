@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<body bgcolor="wheat">
+<body bgcolor="#FA5858">
 	<br>
 	<br>
 	<center>

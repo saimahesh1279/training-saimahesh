@@ -2,7 +2,7 @@
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
-<body bgcolor="#E6E6FA">
+<body bgcolor="#74DF00">
 	<br>
 	<br>
 	<center>

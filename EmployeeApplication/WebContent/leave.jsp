@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<body bgcolor="wheat">
+<body bgcolor="#00FF00">
 <br><br>
 <center>
 <h1>Welcome to Leave apply Page</h1>

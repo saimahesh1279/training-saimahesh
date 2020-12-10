@@ -2,7 +2,7 @@
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
-<body bgcolor="wheat">
+<body bgcolor="#6E6E6E">
 	<br>
 	<br>
 	<center>
@@ -49,4 +49,3 @@
 	</table>
 </body>
 </html>
-© 2020 GitHub, Inc.

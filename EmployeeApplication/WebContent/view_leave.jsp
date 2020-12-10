@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<body bgcolor="wheat">
+<body bgcolor="#04B486">
 <br><br>
 <center>
 <h1>Welcome to Details Page</h1>
