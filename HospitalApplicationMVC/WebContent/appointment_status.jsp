@@ -5,26 +5,26 @@
 <br><br>
 <center><h1>Welcome to Appointment Stauts  Page</h1>
 <br><br>
-<a href="./patient_home.html">Home</a> |
-<a href="./patient_profile.jsp">Profile</a> |
-<a href="./appointment.jsp">Appointment</a> |
-<a href="appointment_status.jsp">Appointment status</a> |
-<a href="./index.html">Logout</a>
+<a href="./patient_home.html">HOME</a> <br><br><br> 
+<a href="./patient_profile.jsp">PROFILE</a> <br><br><br> 
+<a href="./appointment.jsp">APPOINTMENT</a> <br><br><br> 
+<a href="appointment_status.jsp">APPOINTMENT STATUS</a> <br><br><br> 
+<a href="./index.html">LOGOUT</a>
 </center>
 <br><br>
 <%@page import="com.MVC.AppointmentBean,java.util.*" %>
 <table border="2px;" align="center" width="500" hight="300">
 		<tr>
-			<td>Patient Name</td>
-			<td>Phone</td>
-			<td>Email</td>
-			<td>Gender</td>
-			<td>Blood_group</td>
-			<td>Specialist</td>
-			<td>Date of appointment</td>
-			<td>Time of appointment</td>
-			<td>Doctor Name</td>
-			<td>Status</td>
+			<td>PATIENT NAME</td>
+			<td>MOBILE NUMBER</td>
+			<td>EMAIL</td>
+			<td>GENDER</td>
+			<td>BLOOD GROUP</td>
+			<td>SPECIALIST</td>
+			<td>DATE OF APPOINTMENT</td>
+			<td>TIME OF APPOINTMENT</td>
+			<td>DOCTOR NAME</td>
+			<td>STATUS</td>
 		</tr>
 <%
 int id=(Integer)session.getAttribute("id");

@@ -16,12 +16,12 @@
 <br>
 <br>
 <form action="apply_appointment.jsp">
-<input type="text" name="name" placeholder="Enter name "><br><br><br>
-<input type="number" name="phone" placeholder="enter phone number " ><br>
-<input type="email" name="email" placeholder="Enter email "><br><br><br>
-<input type="radio" name="gender" value="Male" > Male
+NAME : <input type="text" name="name" placeholder="Enter name "><br><br><br>
+MOBILE NUMBER : <input type="number" name="phone" placeholder="enter phone number " ><br><br><br>
+EMAIL : <input type="email" name="email" placeholder="Enter email "><br><br><br>
+GENDER : <input type="radio" name="gender" value="Male" > Male
 <input type="radio" name="gender" value="Female"> Female<br>
-<select name="blood_group">
+BLOOD GROUP : <select name="blood_group">
 <option value="A+">A+</option>
 <option value="B+">B+</option>
 <option value="O+">O+</option>
@@ -31,13 +31,13 @@
 <option value="O_">O-</option>
 <option value="AB-">AB-</option>
 </select><br><br>
-<select name="specialist">
+SPECIALIST : <select name="specialist"><br><br><br>
 <option value="Dentist">Dentist</option>
 <option value="Cardio">Cardio</option>
 <option value="ENT">ENT</option>
 </select><br><br>
-<input type="date" name="date_of_appointment" placeholder="select date">
-<input type="time" name="time_of_appointment" placeholder="enter time">
+DATE OF APPOINTMENT : <input type="date" name="date_of_appointment" placeholder="select date"><br><br><br>
+TIME OF APPOINTMENT : <input type="time" name="time_of_appointment" placeholder="enter time">
 
 <input type="submit" value="Apply">
 

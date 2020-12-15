@@ -5,8 +5,8 @@
 <br><br>
 
 <br>
-<a href="doctor_home.html">Home</a>
-<a href="doctor_profile.jsp">Doctor Profile</a>
+<a href="doctor_home.html">Home</a><br><br><br>
+<a href="doctor_profile.jsp">Doctor Profile</a><br><br><br>
 <a href="index.html">Logout</a>
 <br>
 <br>
