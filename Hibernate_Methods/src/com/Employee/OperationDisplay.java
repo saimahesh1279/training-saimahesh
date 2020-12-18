@@ -30,7 +30,7 @@ public class OperationDisplay {
 								+ e.getAddress() + ", phone=" + e.getPhone() + ", DOJ=" + e.getDOJ() + "]");
 			}
 		} else if (choice == 2) {
-			Query qr=se.createQuery("from employee e where e.id=:x");
+			Query qr=se.createQuery("from Employee e where e.id=:x");
 			String option = "";
 			do {
 				System.out.println("enter id of employee to be retrieve");

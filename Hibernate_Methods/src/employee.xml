@@ -4,7 +4,7 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-<class name="com.motivity.Employee" table="employee">
+<class name="com.Employee.Employee" table="employee">
 <id name="id" column="eid"></id>
 <property name="name" column="ename"></property>
 <property name="salary" column="salary"></property>
