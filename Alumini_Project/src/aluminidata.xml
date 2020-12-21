@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+<class name="com.pojo.AluminiData" table="alumini">
+<id name="aid" column="aid"></id>
+<property name="stdname" column="stdname"></property>
+<property name="password" column="password"></property>
+<property name="department" column="department"></property>
+<property name="passedoutyr" column="passedout_yr"></property>
+<property name="mobile" column="mobile"></property>
+<property name="address" column="address"></property>
+<property name="percentage" column="percentage"></property>
+<property name="workingcompany" column="workingcompany"></property>
+<property name="designation" column="designation"></property>
+</class>
+
+</hibernate-mapping>
