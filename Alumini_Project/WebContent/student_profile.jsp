@@ -21,7 +21,7 @@
 			<th>STUDENTID</th>
 			<th>STUDENT NAME</th>
 			<th>STUDENT EMAIL</th>
-			<th>PASSWORD</th>
+			<th>PASSWORD</th> 
 			<th>PRESENT YEAR</th>
 			<th>DEPARTMENT</th>
 			<th>MOBILE NUMBER</th>

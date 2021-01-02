@@ -1,4 +1,3 @@
-<%@page import="com.college.TeacherBean"%>
 <%@page import="org.hibernate.query.Query"%>
 <%@page import="org.hibernate.Transaction"%>
 <%@page import="com.college.Configure1"%>
@@ -38,14 +37,22 @@
 			<th>REMARKS</th>
 		</tr>
 <%
+String stdid=request.getParameter("stdid");
 Session se=Configure1.configure();
 Transaction ts=se.beginTransaction();
-Query qe=se.createQuery("from Feedback f");
+Query qe=null;
+if(stdid.length()==0){
+	qe=se.createQuery("from Feedback f");	
+}
+else {
+	qe=se.createQuery("from Feedback f where f.stdid=:x");
+	qe.setParameter("x",stdid);
+}
 List<Feedback> li=qe.list();
 Iterator<Feedback> i=li.iterator();
 Feedback f=null;
 while (i.hasNext()) {
-  f=(Feedback)i.next();
+  f=(Feedback)i.next();  
   Teacher t=TeacherBean.getTeacherById(f.getTeacherid());
 %>
 <tr>

@@ -8,7 +8,7 @@
 <id name="fid" column="fid"></id>
 <property name="teacherid" column="teacherid"></property>
 <property name="stdid" column="stdid"></property>
-<property name="feedback" column="feedback"></property>
+<property name="rating" column="rating"></property>
 <property name="remarks" column="remarks"></property>
 </class>
 

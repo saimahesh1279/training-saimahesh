@@ -11,26 +11,25 @@ import javax.servlet.http.HttpSession;
 import com.pojo.AluminiData;
 
 
-public class AluminiLogin extends HttpServlet {
-	private static final long serialVersionUID = 1L;
+public class SearchAlumini extends HttpServlet {
+	
        
-  
+    
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String id=request.getParameter("id");
-		String password=request.getParameter("password");
-		AluminiData status;
-		status=AluminiLoginBean.aluminiLogin(id, password);
-		HttpSession he=request.getSession();
+		String id= request.getParameter("search");
+		AluminiData status=null;
+		status=SearchAluminiBean.searchAlumini(id);
+		System.out.println(status);
+		HttpSession ha=request.getSession();
 		if(status!=null)
 		{
-			he.setAttribute("alumniid", id);
-			response.sendRedirect("./alumini_home.html?msg=user "+id+" sucessfully logined");
+			ha.setAttribute("details", status);
+			response.sendRedirect("./viewstudent_alumini.jsp?msg=search sucessfull");
 		}
 		else
 		{
-			response.sendRedirect("./index.html?msg=user login unsucessfully");
+			response.sendRedirect("./search_alumini.jsp?msg=search sucessfull");
 		}
-	
 	}
 
 }

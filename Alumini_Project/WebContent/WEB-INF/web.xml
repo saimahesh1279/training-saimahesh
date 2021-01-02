@@ -74,4 +74,24 @@
 	</servlet-mapping>
 	
 	
+	
+	
+		<servlet>
+	<servlet-name>eight</servlet-name>
+		<servlet-class>com.college.SearchAlumini</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>eight</servlet-name>
+		<url-pattern>/search_alumini</url-pattern>	
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>nine</servlet-name>
+		<servlet-class>com.college.TakeFeedback</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>nine</servlet-name>
+		<url-pattern>/feedback</url-pattern>	
+	</servlet-mapping>
+	
 	</web-app>

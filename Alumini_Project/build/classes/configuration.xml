@@ -19,5 +19,6 @@
 		<mapping resource="aluminiUpdate.xml"/>
 		<mapping resource="aluminidata.xml"/>
 		<mapping resource="feedback.xml"/>
+		<mapping resource="teacher.xml"/>
 	</session-factory>
 </hibernate-configuration>

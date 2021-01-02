@@ -24,11 +24,11 @@ public class AluminiUpdate extends HttpServlet {
 	}
 	if(status)
 		{
-		response.sendRedirect("./alumini.html?msg=updated sucessfully");
+		response.sendRedirect("./alumini_update.html?msg=updated sucessfully");
 	}
 	else
 	{
-		response.sendRedirect("./alumini.html?msg=updated Unsucessfully");
+		response.sendRedirect("./alumini_update.html?msg=updated Unsucessfully");
 	}
 	}
 

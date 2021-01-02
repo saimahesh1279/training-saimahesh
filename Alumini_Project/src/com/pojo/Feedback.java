@@ -4,7 +4,7 @@ public class Feedback {
 private int fid;
 private int teacherid;
 private String stdid;
-private String feedback;
+private int rating;
 private String remarks;
 public int getFid() {
 	return fid;
@@ -24,11 +24,11 @@ public String getStdid() {
 public void setStdid(String stdid) {
 	this.stdid = stdid;
 }
-public String getFeedback() {
-	return feedback;
+public int getRating() {
+	return rating;
 }
-public void setFeedback(String feedback) {
-	this.feedback = feedback;
+public void setRating(int rating) {
+	this.rating = rating;
 }
 public String getRemarks() {
 	return remarks;

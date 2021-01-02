@@ -22,7 +22,7 @@ public static boolean addStudent(String id, String name, String email, String pa
 	    as.setAddress(address);
 	    Serializable s=se.save(as);
 	ts.commit();
-	if(s.hashCode()>0) {
+	if(s!=null) {
 	    return true;
 	}
 	return false;
