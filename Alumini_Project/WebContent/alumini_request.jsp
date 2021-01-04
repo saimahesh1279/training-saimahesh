@@ -12,7 +12,7 @@
 </head>
 <body background="KHMhkNq2.jpg">
 <center>
-<h1>Welcome to View Alumini Request page</h1>
+<h1>Welcome to View Alumni Request page</h1>
 <a href="./admin_home.html">Home</a> |
 <a href="./add_student.jsp">ADD Student</a> |
 <a href="./add_alumini.html">ADD ALUMINI</a> |
@@ -22,8 +22,10 @@
 <a href="./view_feedback.jsp">VIEW FEEDBACK</a><br><br>
 <a href="./index.html">logout</a>
 <%@page import="com.pojo.AluminiUpdate,java.util.*" %>
-<table border="2pxl" align="center" width="500" hight="300">
-		<tr>
+<div class="container">
+		
+		<table class="table table-bordered table-light">
+			<tr class="table-danger">
 			<th>AluminiID</th>
 			<th>Working Company</th>
 			<th>designation</th>
@@ -49,5 +51,6 @@ while (i.hasNext()) {
 <%} %>
 </tr>
 </table>
+</div>
 </body>
 </html>

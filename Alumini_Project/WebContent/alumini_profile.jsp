@@ -4,10 +4,35 @@
 <%@page import="org.hibernate.Session"%>
 <!DOCTYPE html>
 <html>
-<body background="KHMhkNq2.jpg"  > 
+<head>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+.bg {
+  /* The image used */
+  background-image: url("KHMhkNq2.jpg");
+  /* Full height */
+  height: 100%; 
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
+</style>
+<link
+	href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	rel="stylesheet" id="bootstrap-css">
+<script
+	src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script
+	src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body bgcolor="#E6E6FA" class="bg">
 <br><br>
 <center>
-<h1>Welcome ALUMINI PROFILE Page</h1>
+<h1>Welcome ALUMNI PROFILE Page</h1>
 <a href="./alumini_home.html">HOME</a> <br><br><br>
 <a href="./alumini_update.html">ALUMINI UPDATE</a> <br><br><br>
 <a href="./alumini_update.jsp">ALUMINI PROFILE</a> <br><br><br>
@@ -17,8 +42,10 @@
 
 <form action="./alumini_profile.jsp" method="post"></form>
 <%@page import="com.pojo.AluminiData,com.college.AluminiLogin,java.util.*" %>
-<table border="2pxl" align="center" width="500" hight="300">
-		<tr>
+<div class="container">
+		
+		<table class="table table-bordered table-light">
+			<tr class="table-danger">
 			<th>ALUMNIID</th>
 			<th>ALUMNI NAME</th>
 			<th>PASSWORD</th>
@@ -66,6 +93,6 @@ while (i.hasNext()) {
 
 
 </table>
-
+</div>
 </body>
 </html>

@@ -5,13 +5,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>STUDENTS LIST</title>
-</meta>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+.bg {
+  /* The image used */
+  background-image: url("KHMhkNq2.jpg");
+  /* Full height */
+  height: 100%; 
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
+</style>
+<link
+	href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	rel="stylesheet" id="bootstrap-css">
+<script
+	src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script
+	src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
+<body bgcolor="#E6E6FA" class="bg">
 <body background="KHMhkNq2.jpg">
-
-<h1>Welcome to Alumini view page</h1>
+<h1>Welcome to Alumni view page</h1>
 <a href="./admin_home.html">Home</a> |
 <a href="./add_student.jsp">ADD Student</a> |
 <a href="./add_alumini.html">ADD ALUMINI</a> |
@@ -22,8 +42,11 @@
 <a href="./index.html">logout</a>
 
 <%@page import="com.pojo.AluminiData,java.util.*" %>
-<table border="2pxl" align="center" width="500" hight="300">
-		<tr>
+<div class="container">
+		
+		<table class="table table-bordered table-light">
+			<tr class="table-danger">
+	
 			<th>ALUMINIID</th>
 			<th>STUDENT NAME</th>
 			<th>DEPARTMENT</th>
@@ -66,6 +89,6 @@ while (i.hasNext()) {
 
 
 </table>
-
+</body>
 </body>
 </html>

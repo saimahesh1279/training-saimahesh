@@ -6,9 +6,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>STUDENTS LIST</title>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+.bg {
+  /* The image used */
+  background-image: url("KHMhkNq2.jpg");
+  /* Full height */
+  height: 100%; 
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
+</style>
+<link
+	href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	rel="stylesheet" id="bootstrap-css">
+<script
+	src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script
+	src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
+<body bgcolor="#E6E6FA" class="bg">
 <body background="KHMhkNq2.jpg">
 <center>
 <h1>Welcome to STUDENT  FEEDBACK PAGE Page</h1>
@@ -27,8 +49,10 @@
 <input type="text" name="stdid" placeholder="Enter student id">
 <input type="submit" value="search">
 </form><br><br>
-<table border="2pxl" align="center" width="800" hight="400">
-		<tr>
+<div class="container">
+		
+		<table class="table table-bordered table-light">
+			<tr class="table-danger">
 			<th>FEEDBACKID</th>
 			<th>TEACHER ID</th>
 			<th>TEACHER NAME</th>
@@ -60,6 +84,6 @@ while (i.hasNext()) {
 <%} %>
 </tr>
 </table>
-
+</div>
 </body>
 </html>

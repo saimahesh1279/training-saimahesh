@@ -6,11 +6,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>FOURTH YEAR STUDENT HOME</title>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+.bg {
+  /* The image used */
+  background-image: url("KHMhkNq2.jpg");
+  /* Full height */
+  height: 100%; 
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
+</style>
+<link
+	href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	rel="stylesheet" id="bootstrap-css">
+<script
+	src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script
+	src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
-<body background="KHMhkNq2.jpg">
-<center>
+<body bgcolor="#E6E6FA" class="bg">
+<body background="KHMhkNq2.jpg"><center>
 <h1>Welcome to Alumni Details page</h1>
 <a href="./student_home.html">Home</a> |
 <a href="./student_profile.jsp">Profile</a> |
@@ -20,8 +41,10 @@
 <br><br>
 </center>
 <%@page import="com.pojo.AluminiData,java.util.*" %>
-<table border="2pxl" align="center" width="500" hight="300">
-		<tr>
+<div class="container">
+		
+		<table class="table table-bordered table-light">
+			<tr class="table-danger">
 			<th>ALUMINI STUDENT ID</th>
 			<th>STUDENT NAME</th>
 			<th>DEPARTMENT</th>
@@ -48,7 +71,7 @@ AluminiData s=(AluminiData)session.getAttribute("details");
 <td><%=s.getDesignation() %></td>
 </tr>
 </table>
-
+</div>
 
 </body>
 </html>

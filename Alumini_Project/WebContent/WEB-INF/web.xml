@@ -94,4 +94,14 @@
 		<url-pattern>/feedback</url-pattern>	
 	</servlet-mapping>
 	
+	
+	
+	<servlet>
+	<servlet-name>ten</servlet-name>
+		<servlet-class>com.college.SearchFriends</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ten</servlet-name>
+		<url-pattern>/search_friends</url-pattern>	
+	</servlet-mapping>
 	</web-app>
