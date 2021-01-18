@@ -9,12 +9,13 @@
 <property name="amount" column="amount"></property>
 
 
-</class>
-<subclass name="com.inheritance.CredtCard" discriminator-value="CC">
+
+<subclass name="com.inheritance.CreditCard" discriminator-value="CC">
 <property name="cardType" column="cctype"></property>
 </subclass>
 
 <subclass name="com.inheritance.Cheque" discriminator-value="CQ">
 <property name="chequeType" column="cqtype"></property>
 </subclass>
+</class>
 </hibernate-mapping>

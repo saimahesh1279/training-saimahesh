@@ -3,19 +3,21 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-<class name="com.inheritance.Payment" table="payment">
+<class name="com.inheritace2.Payment" table="payment">
 <id name="paymentId" column="pid"></id>
-<discriminator column="payType" type="string" length="50"></discriminator>
 <property name="amount" column="amount"></property>
 
+<joined-subclass name="com.inheritace2.CreditCard" table="CreditCard">
+<key column="cid"></key>
+<property name="cardType" column="cardtype"></property>
+</joined-subclass>
 
 
-<subclass name="com.inheritance.CreditCard" discriminator-value="CC">
-<property name="cardType" column="cctype"></property>
-</subclass>
-
-<subclass name="com.inheritance.Cheque" discriminator-value="CQ">
+<joined-subclass name="com.inheritace2.Cheque" table="cheque">
+<key column="cqid"></key>
 <property name="chequeType" column="cqtype"></property>
-</subclass>
+
+</joined-subclass>
+
 </class>
 </hibernate-mapping>
