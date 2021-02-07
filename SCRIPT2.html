@@ -1,0 +1,88 @@
+<html>
+
+<head>
+    <style>
+        body {
+            background-image: url(Website-Design-Background.png);
+        }
+        
+        #id1 {
+            text-align: center;
+            color: azure;
+            font-family: fantasy;
+        }
+        
+        #id2 {
+            text-align: center;
+            color: azure;
+            font-family: monospace;
+        }
+        
+        #id3 {
+            text-align: center;
+            color: azure;
+            font-family: monospace;
+        }
+        
+        #h2 {
+            text-align: center;
+            color: azure;
+        }
+        
+        #h3 {
+            text-align: center;
+            color: azure;
+        }
+        
+        #form {
+            background-color: #585858;
+            margin-left: 30%;
+            margin-right: 30%;
+            border: 2px solid turquoise;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="id1"></h1>
+    <h2 id="id2"></h2>
+    <h2 id="id3"></h2>
+
+    <br><br><br><br><br>
+
+    <h2 id="h2"></h2>
+    <h2 id="h3"></h2>
+    <div>
+        <form id="form"><br><br><br>
+            <label class="names">First Name</label>
+            <input type="text" id="FirstName" placeholder="enter first name"><br><br><br>
+
+            <label class="names">Last Name</label>
+            <input type="text" id="lastName" placeholder="enter last name"><br><br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <label class="names">Age</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="number" id="age" placeholder="enter age"><br><br><br>
+
+            <button style="border-radius: 20px ;  height: 50px; width: 100px;background-color: cadetblue;margin-left: auto;margin-right: auto; " id="button" onclick="getDetails()">SUBMIT</button><br><br><br>
+
+        </form>
+    </div>
+    <br<br><br>
+
+
+        <script>
+            document.getElementById("id1").innerHTML = "Java Script";
+            document.getElementById("id2").innerHTML = "Using FUCTIONS";
+            document.getElementById("id3").innerHTML = Date();
+
+            function getDetails() {
+                var first = document.getElementById("FirstName").value;
+                var last = document.getElementById("lastName").value;
+                var x = document.getElementById("age").value;
+                window.alert("name is :" + (first + " " + last) + "\n age is :" + x);
+            }
+        </script>
+</body>
+
+</html>

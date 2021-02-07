@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: black;
+        }
+        
+        #id1 {
+            text-align: center;
+            color: lightcoral;
+            border-bottom: 2px solid springgreen;
+        }
+        
+        #p1 {
+            text-align: center;
+            background-color: darkolivegreen;
+            color: cyan;
+        }
+        
+        #marq {
+            color: cornsilk;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="id1"></h1>
+    <div>
+        <marquee id="marq" behavior="scroll" direction="right" scrollamount="10"></marquee>
+    </div><br><br><br><br>
+    <p id="p1"></p><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div style="text-align: center;">
+        <button onclick="document.getElementById('myImage').src='gunshot.gif'">SHOOT</button>
+        <img id="myImage" src="Screenshot.png" style="width:500px">
+        <button onclick="document.getElementById('myImage').src='result.gif'">VIEW SHOTS</button>
+    </div>
+</body>
+<script>
+    document.getElementById("id1").innerHTML = "WELCOME TO SHOOTING AREA";
+    document.getElementById("marq").innerHTML = "NOW U ARE GOING TO SHOOT";
+    document.getElementById("p1").innerHTML = "be carefull";
+</script>
+
+</html>
