@@ -1,0 +1,84 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <img style="height: 50px; width: 50px;" alt="Brand" src="LOGO.jpg">
+                <h1>CURD OPERATIONS</h1>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="row">
+        <div class="col-xs-6 col-md-2">
+            <a href="#" class="thumbnail">
+                <form id="id01" class="registration" method="post">
+
+                    <h1 style="color: black; background-color: aliceblue;">👋 Welcome!</h1>
+                    <div align=center class="form-check">
+
+                        <label class="pure-material-textfield-outlined">&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span style="background-color: white;">Name</span>
+                           <input id="empName" placeholder="" type="text" required>
+
+                           <br><br>
+                        <label class="pure-material-textfield-outlined">&nbsp;&nbsp;&nbsp;&nbsp;
+                <span style="background-color: white;">Email</span>
+               <input id="empEmail" placeholder="" type="email" required>
+                
+            </label>
+                        <br><br>
+                        <label class="pure-material-textfield-outlined">
+                <span style="background-color: white;">Password</span>
+              <input id="emppassword" placeholder="" type="password" required>
+              
+            </label>
+                        <br><br>
+                        <label class="pure-material-textfield-outlined">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span style="background-color: white;">age</span>
+              <input id="empAge" placeholder="" type="number" required>
+              
+            </label>
+                        <br><br>
+
+                        <label class="pure-material-textfield-outlined">&nbsp;&nbsp;
+                <span style="background-color: white;">address</span>
+              <input id="empAddress" placeholder="" type="text" required>
+              
+            </label>
+                        <br><br>
+                    </div>
+                    <button onclick="onSubmit()" style="width:auto;border-radius: 20px; background-color: black; color: yellow;">signup</button>
+                </form>
+                </form>
+            </a>
+        </div>
+        <div id="form2" class="col-xs-6 col-md-2">
+            <a href="#" class="thumbnail">
+                <table cellpadding="10" class="list" align="center" id="employeeList">
+                    <thead>
+                        <tr>
+
+                            <th>empName</th>
+                            <th>empEmail</th>
+                            <th>empAge</th>
+                            <th>empAddress</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
